@@ -4,9 +4,9 @@
 
 ## List
 
-* [TypedArray, ArrayBuffer and view](#TypedArray, ArrayBuffer and view)
+* [TypedArray, ArrayBuffer and view](#typedarray-arraybuffer-and-view)
 
-### TypedArray, ArrayBuffer and view
+### TypedArray ArrayBuffer and view
 
 __TypedArray__ consists of buffer(ArrayBuffer) + view  
 __Arraybuffer__ is an actual strorage for the bytes which is used for binary data transfers between server and client  
