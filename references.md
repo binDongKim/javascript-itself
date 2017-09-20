@@ -1,4 +1,4 @@
-#References
+# References
 
 * [Browser Rendering](http://m.post.naver.com/viewer/postView.nhn?volumeNo=8431285&memberNo=34176766)  
 * [Javascript Event Delegation](https://stackoverflow.com/questions/1687296/what-is-dom-event-delegation)
