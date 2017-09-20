@@ -20,3 +20,9 @@
 )
 * [Javascript Prototype](https://medium.com/@bluesh55/javascript-prototype-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-f8e67c286b67
 )
+* [Responsive Web](http://www.nextree.co.kr/p8622/)
+* [Web Server vs Web Application Server(WAS)](http://bsnippet.tistory.com/category/%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B8%B0%EC%88%A0/Web)
+* [What is CORS?](https://www.maxcdn.com/one/visual-glossary/cors/)
+* [Javascript Closure](http://javascriptissexy.com/understand-javascript-closures-with-ease/)
+* [Git Cheatsheet](https://github.com/mingrammer/git-tips)
+* [pageX, pageY // screenX, screenY // clientX, clientY](https://stackoverflow.com/questions/6073505/what-is-the-difference-between-screenx-y-clientx-y-and-pagex-y)
