@@ -5,8 +5,8 @@
 ## List
 
 * [TypedArray, ArrayBuffer and view](#typedarray-arraybuffer-and-view)
-* [for...in vs for...of](#for...in-vs-for...of)
-* [Array.from vs Spread syntax](#array.from-vs-spread-syntax)
+* [for...in vs for...of](#forin-vs-forof)
+* [Array.from vs Spread syntax](#arrayfrom-vs-spread-syntax)
 
 ### TypedArray, ArrayBuffer and view
 
