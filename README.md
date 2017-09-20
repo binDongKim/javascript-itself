@@ -2,6 +2,8 @@
 
 >*__Wiking__ some concepts in javascript based on my understanding.*
 
+***
+
 ## List
 
 >* [TypedArray, ArrayBuffer and view](#typedarray-arraybuffer-and-view)
