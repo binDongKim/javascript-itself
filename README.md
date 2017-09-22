@@ -9,6 +9,7 @@
 >* [TypedArray, ArrayBuffer and view](#typedarray-arraybuffer-and-view)
 >* [for...in vs for...of](#forin-vs-forof)
 >* [Array.from vs Spread syntax](#arrayfrom-vs-spread-syntax)
+>* [Temporal Dead Zone with let, const](#temporal-dead-zone-with-let-const)
 
 ***
 
@@ -34,3 +35,7 @@
 >__Spread syntax(...)__ can be only used with iterable objects.
 
 ***
+
+## Temporal Dead Zone with let, const
+
+>In ECMAScript 2015, let bindings are not subject to Variable Hoisting, which means that let declarations do not move to the top of the current execution context. Referencing the variable in the block before the initialization results in a ReferenceError (contrary to a variable declared with var, which will just have the undefined value). The variable is in a "temporal dead zone" from the start of the block until the initialization is processed.
