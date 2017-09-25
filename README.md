@@ -14,6 +14,7 @@
 >* [Rest parameters](rest-parameters)
 >* [Rest parameters(...) vs Spread syntax(...)](#rest-parameters-vs-spread-syntax)
 >* ["this" in ES6 Arrow functions](#this-in-es6-arrow-functions)
+>* [Iterable in Javascript](#iterable-in-javascript)
 
 ***
 
@@ -35,7 +36,7 @@
 
 ### Array.from vs Spread Syntax
 
->__Array.from__ can be used with Array-like objects or iterable objects.  
+>__Array.from__ can be used with iterable objects or Array-like objects which don't implement the iterable protocol.  
 >__Spread syntax(...)__ (other than in the case of spread properties) can be only used with iterable objects.
 
 ***
@@ -68,3 +69,10 @@ If the last named argument of a function is prefixed with ..., it becomes an __a
 ## "this" in ES6 Arrow functions
 
 >The __this__ value (internally) is not actually bound to the arrow function. Normal functions in JavaScript bind their own __this__ value, however the __this__ value used in arrow functions is actually fetched lexically from the scope it sits inside. It has no __this__, so when you use this you’re talking to the outer scope.
+
+***
+
+## Iterable in Javascript
+
+>An object is iterable if it defines its iteration behavior, such as what values are looped over in a for...of construct. Some built-in types, such as Array or Map, have a default iteration behavior, while other types (such as Object) do not.  
+In order to be __iterable__, an object must implement the __@@iterator__ method, meaning that the object (or one of the objects up its prototype chain) must have a property with a __Symbol.iterator__ key.
