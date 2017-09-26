@@ -86,6 +86,4 @@ In order to be __iterable__, an object must implement the __@@iterator__ method,
 ```javascript
 person1.valueOf()
 ```
-The browser initially checks to see if the person1 object has a valueOf() method available on it.
-It doesn't, so the browser then checks to see if the person1 object's __prototype__ object (Person() constructor's prototype) has a valueOf() method available on it.
-It doesn't either, so the browser then checks to see if the Person() constructor's prototype object's prototype object (Object() constructor's prototype) has a valueOf() method available on it. It does, so it is called.
+>The browser initially checks to see if the person1 object has a valueOf() method available on it. It doesn't, so the browser then checks to see if the person1 object's __prototype__ object(Person function/class prototype object) has a valueOf() method available on it. It doesn't either, so the browser then checks to see if the Person function/class prototype object's prototype object(Object prototype object) has a valueOf() method available on it. It does, so it is called.
