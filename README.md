@@ -6,7 +6,7 @@
 
 ## List
 
->* [TypedArray, ArrayBuffer and view](#typedarray-arraybuffer-and-view)
+>* [TypedArray, ArrayBuffer and View](#typedarray-arraybuffer-and-view)
 >* [for...in vs for...of](#forin-vs-forof)
 >* [Array.from vs Spread syntax](#arrayfrom-vs-spread-syntax)
 >* [Temporal Dead Zone with let, const](#temporal-dead-zone-with-let-const)
@@ -15,10 +15,11 @@
 >* [Rest parameters(...) vs Spread syntax(...)](#rest-parameters-vs-spread-syntax)
 >* ["this" in ES6 Arrow functions](#this-in-es6-arrow-functions)
 >* [Iterable in Javascript](#iterable-in-javascript)
+>* [Prototype Chaining](#prototype-chaining)
 
 ***
 
-### TypedArray, ArrayBuffer and view
+### TypedArray, ArrayBuffer and View
 
 >__TypedArray__ consists of buffer(ArrayBuffer) + view.  
 >__Arraybuffer__ is an actual strorage for the bytes which is used for binary data transfers between server and client.  
@@ -76,3 +77,15 @@ If the last named argument of a function is prefixed with ..., it becomes an __a
 
 >An object is iterable if it defines its iteration behavior, such as what values are looped over in a for...of construct. Some built-in types, such as Array or Map, have a default iteration behavior, while other types (such as Object) do not.  
 In order to be __iterable__, an object must implement the __@@iterator__ method, meaning that the object (or one of the objects up its prototype chain) must have a property with a __Symbol.iterator__ key.
+
+***
+
+## Prototype Chaining
+
+>What happens if you call a method on person1, which is actually defined on Object?
+```javascript
+person1.valueOf()
+```
+The browser initially checks to see if the person1 object has a valueOf() method available on it.
+It doesn't, so the browser then checks to see if the person1 object's __prototype__ object (Person() constructor's prototype) has a valueOf() method available on it.
+It doesn't either, so the browser then checks to see if the Person() constructor's prototype object's prototype object (Object() constructor's prototype) has a valueOf() method available on it. It does, so it is called.
