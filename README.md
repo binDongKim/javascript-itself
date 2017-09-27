@@ -131,7 +131,7 @@ multiply(5);    // 5
 ## "this" in javascript
 
 >__"this"__ is the current execution context of a function. It varies under the below circumstances:
-- function invocation: global object(window object or undefined in strict-mode)
-- method invocation: the object which contains the method
-- constructor invocation: the newly created object
-- indirect invocation(call, apply, bind): the first argument
+>- function invocation: global object(window object or undefined in strict-mode)
+>- method invocation: the object which contains the method
+>- constructor invocation: the newly created object
+>- indirect invocation(call, apply, bind): the first argument
