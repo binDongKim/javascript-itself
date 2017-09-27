@@ -18,6 +18,7 @@
 >* [Prototype Chaining](#prototype-chaining)
 >* [Property access/use declared with/in function](#property-accessuse-declared-within-function)
 >* [Default Parameters](#default-parameters)
+>* ["this" in Javascript](#this-in-javascript)
 
 ***
 
@@ -71,7 +72,7 @@ If the last named argument of a function is prefixed with ..., it becomes an __a
 
 ## "this" in ES6 Arrow functions
 
->The __this__ value (internally) is not actually bound to the arrow function. Normal functions in JavaScript bind their own __this__ value, however the __this__ value used in arrow functions is actually fetched lexically from the scope it sits inside. It has no __this__, so when you use this you’re talking to the outer scope.
+>The __this__ value (internally) is not actually bound to the arrow function. Normal functions in JavaScript bind their own __this__ value, however the __this__ value used in arrow functions is actually fetched lexically from the scope it sits inside. It has no __this__, so when you use this you’re talking to the outer scope. *MOST IMPORTANTLY*, __this__ in arraw functions only sets once, which means it's pretty static and it never changes.
 
 ***
 
@@ -124,3 +125,13 @@ function multiply(a, b = 1) {
 multiply(5, 2); // 10
 multiply(5);    // 5
 ```
+
+***
+
+## "this" in javascript
+
+>__"this"__ is the current execution context of a function. It varies under the below circumstances:
+- function invocation: global object(window object or undefined in strict-mode)
+- method invocation: the object which contains the method
+- constructor invocation: the newly created object
+- indirect invocation(call, apply, bind): the first argument
