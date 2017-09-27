@@ -72,7 +72,7 @@ If the last named argument of a function is prefixed with ..., it becomes an __a
 
 ## "this" in ES6 Arrow functions
 
->The __this__ value (internally) is not actually bound to the arrow function. Normal functions in JavaScript bind their own __this__ value, however the __this__ value used in arrow functions is actually fetched lexically from the scope it sits inside. It has no __this__, so when you use this you’re talking to the outer scope. *MOST IMPORTANTLY*, __this__ in arraw functions only sets once, which means it's pretty static and it never changes.
+>The __"this"__ value (internally) is not actually bound to the arrow function. Normal functions in JavaScript bind their own __"this"__ value, however the __"this"__ value used in arrow functions is actually fetched lexically from the scope it sits inside. It has no __"this"__, so when you use this you’re talking to the outer scope. *MOST IMPORTANTLY*, __"this"__ in arrow functions only sets once, which means it's pretty static and it never changes.
 
 ***
 
