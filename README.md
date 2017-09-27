@@ -16,6 +16,7 @@
 >* ["this" in ES6 Arrow functions](#this-in-es6-arrow-functions)
 >* [Iterable in Javascript](#iterable-in-javascript)
 >* [Prototype Chaining](#prototype-chaining)
+>* [Property access/use declared with/in function](#property-accessuse-declared-within-function)
 
 ***
 
@@ -87,3 +88,24 @@ In order to be __iterable__, an object must implement the __@@iterator__ method,
 person1.valueOf()
 ```
 >The browser initially checks to see if the person1 object has a valueOf() method available on it. It doesn't, so the browser then checks to see if the person1 object's __prototype__ object(Person function/class prototype object) has a valueOf() method available on it. It doesn't either, so the browser then checks to see if the Person function/class prototype object's prototype object(Object prototype object) has a valueOf() method available on it. It does, so it is called.
+
+***
+
+## Property access/use declared with/in function
+
+```javascript
+function A() {
+  var aVar = function() { console.log("local variable"); };
+  this.aVar = function() { console.log("member property"); };
+}
+
+A.prototype.aVariable = function() { console.log("prototype property"); };
+A.aVar = function() { console.log("static property"); };
+
+var a = new A();
+a.aVar(); // log: member property
+a.aVariable(); // log: prototype property
+A.aVar(); // log: static property
+
+// There is no way to access/use the local variable aVar outside of the function A.
+```
