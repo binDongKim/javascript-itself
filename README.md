@@ -17,6 +17,7 @@
 >* [Iterable in Javascript](#iterable-in-javascript)
 >* [Prototype Chaining](#prototype-chaining)
 >* [Property access/use declared with/in function](#property-accessuse-declared-within-function)
+>* [Default Parameters](#default-parameters)
 
 ***
 
@@ -108,4 +109,18 @@ a.aVariable(); // log: prototype property
 A.aVar(); // log: static property
 
 // There is no way to access/use the local variable aVar outside of the function A.
+```
+***
+
+## Default Parameters
+
+>Default function parameters allow formal parameters to be initialized with __default values__ if no value or undefined is passed.
+
+```javascript
+function multiply(a, b = 1) {
+  return a * b;
+}
+
+multiply(5, 2); // 10
+multiply(5);    // 5
 ```
