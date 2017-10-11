@@ -19,6 +19,7 @@
 >* [Property access/use declared with/in function](#property-accessuse-declared-within-function)
 >* [Default Parameters](#default-parameters)
 >* ["this" in Javascript](#this-in-javascript)
+>* [Destructuring Assignment](#destructuring-assignment)
 
 ***
 
@@ -135,3 +136,47 @@ multiply(5);    // 5
 >- method invocation: the object which contains the method
 >- constructor invocation: the newly created object
 >- indirect invocation(call, apply, bind): the first argument
+
+***
+
+## Destructuring Assignment
+
+>The __destructuring assignment__ syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+
+```javascript
+[a, b, ...rest] = [10, 20, 30, 40, 50];
+console.log(a); // 10
+console.log(b); // 20
+console.log(rest); // [30, 40, 50]
+```
+
+```javascript
+var a = 1;
+var b = 3;
+
+[a, b] = [b, a];
+console.log(a); // 3
+console.log(b); // 1
+```
+
+>A variable can be assigned a default, in the case that the value unpacked from the object is undefined.
+
+```javascript
+var {a = 10, b = 5} = {a: 3};
+
+console.log(a); // 3
+console.log(b); // 5
+```
+
+>Setting a function parameter's default value
+
+```javascript
+function drawES2015Chart({size = 'big', cords = {x: 0, y: 0}, radius = 25} = {}) {
+  console.log(size, cords, radius);
+}
+
+drawES2015Chart({
+  cords: {x: 18, y: 30},
+  radius: 30
+});
+```
