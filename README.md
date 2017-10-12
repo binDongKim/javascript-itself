@@ -23,6 +23,7 @@
 >* [Bookmarklet](#bookmarklet)
 >* [DOMContentLoaded vs load](#domcontentloaded-vs-load)
 >* ["href" attribute in &lt;a&gt;](#href-attribute-in-a)
+>* [function*: Generator function](#function-generator-function)
 
 ***
 
@@ -201,3 +202,24 @@ the load event is fired when the page is fully loaded with all dependent resourc
 ## "href" attribute in &lt;a&gt;
 
 >This attribute may be omitted(as of HTML5) to create a placeholder link. A placeholder link resembles a traditional hyperlink, but does not lead anywhere.
+
+***
+
+## function*: Generator function
+
+>The __function*__ declaration defines a __generator__ function. __Generators__ are functions which can be exited and later re-entered. Calling a generator function does not execute its body immediately; an __iterator__ object for the function is returned instead. When the iterator's __next()__ method is called, the generator function's body is executed until the first __yield__ expression. The __next()__ method returns an object with a __value__ property containing the yielded value and a __done__ property which indicates whether the generator has yielded its last value as a boolean. Calling the __next()__ method with an argument will resume the generator function execution, replacing the __yield__ statement where execution was paused with the argument from __next()__. A __return__ statement in a generator, when executed, will make the generator __done__. If a value is __returned__, it will be passed back as the __value__. A generator which has returned will not yield any more values.
+
+```javascript
+function* idMaker() {
+  var index = 0;
+  while (index < 3)
+    yield index++;
+}
+
+var gen = idMaker();
+
+console.log(gen.next().value); // 0
+console.log(gen.next().value); // 1
+console.log(gen.next().value); // 2
+console.log(gen.next().value); // undefined
+```
