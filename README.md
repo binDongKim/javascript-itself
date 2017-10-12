@@ -20,6 +20,7 @@
 >* [Default Parameters](#default-parameters)
 >* ["this" in Javascript](#this-in-javascript)
 >* [Destructuring Assignment](#destructuring-assignment)
+>* [Bookmarklet](#bookmarklet)
 
 ***
 
@@ -180,3 +181,8 @@ drawES2015Chart({
   radius: 30
 });
 ```
+***
+
+## Bookmarklet
+
+>Entering "javascript:" in the url bar executes javascript and it enables us to manipulate the current page. 
