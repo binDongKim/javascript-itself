@@ -21,6 +21,8 @@
 >* ["this" in Javascript](#this-in-javascript)
 >* [Destructuring Assignment](#destructuring-assignment)
 >* [Bookmarklet](#bookmarklet)
+>* [DOMContentLoaded vs load](#domcontentloaded-vs-load)
+>* ["href" attribute in &lt;a&gt;](#href-attribute-in-a)
 
 ***
 
@@ -185,4 +187,17 @@ drawES2015Chart({
 
 ## Bookmarklet
 
->Entering "javascript:" in the url bar executes javascript and it enables us to manipulate the current page. 
+>Entering "javascript:" in the url bar executes javascript and it enables us to manipulate the current page.
+
+***
+
+## DOMContentLoaded vs load
+
+>DOMContentLoaded awaits only for HTML and scripts to be loaded.
+the load event is fired when the page is fully loaded with all dependent resources including images and styles.
+
+***
+
+## "href" attribute in &lt;a&gt;
+
+>This attribute may be omitted(as of HTML5) to create a placeholder link. A placeholder link resembles a traditional hyperlink, but does not lead anywhere.
