@@ -30,3 +30,4 @@
 *  [Destructuring in Javascript](http://www.deadcoderising.com/2017-03-28-es6-destructuring-an-elegant-way-of-extracting-data-from-arrays-and-objects-in-javascript/)
 * [Destructuring in Javascript(MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 * [Javascript Bookmarklet](https://www.youtube.com/watch?time_continue=33&v=nr0JtExwoV8)
+* [function*: Generator function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
