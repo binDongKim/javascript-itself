@@ -24,6 +24,9 @@
 >* [DOMContentLoaded vs load](#domcontentloaded-vs-load)
 >* ["href" attribute in &lt;a&gt;](#href-attribute-in-a)
 >* [function*: Generator function](#function-generator-function)
+>* [HTML tags vs HTML elements](#html-tags-vs-html-elements)
+>* [HTML Node object vs HTML Element object](#html-node-object-vs-html-element-object)
+>* [parentNode vs parentElement](#parentnode-vs-parentelement)
 
 ***
 
@@ -223,3 +226,31 @@ console.log(gen.next().value); // 1
 console.log(gen.next().value); // 2
 console.log(gen.next().value); // undefined
 ```
+
+***
+
+## HTML tags vs HTML elements
+
+> HTML __tag__ is just opening or closing entity. &lt;p&gt; is an opening tag and &lt;/p&gt; is a closing tag. HTML __element__ encompasses opening tag, closing tag and content. &lt;p&gt;This is the content&lt;/p&gt;: This complete thing is called a HTML element.
+
+***
+
+## HTML Node object vs HTML Element object
+
+>__Node__ is the generic name for any type of object in DOM hierarchy. __Element__ is one specific type of __Node__. DOM consists of a various type of __nodes__ (text nodes, comment nodes etc). So __nodeList__ is simply an array-like list of __nodes__. HTML5 defines __HTMLCollection__ which is a list of HTML Elements(not any node, only Elements). While it is very similar in interface to __nodeList__, a distinction is now made in that it only contains __Elements__, not any type of __node__.  
+
+***
+
+## parentNode vs parentElement
+
+>In most cases, they are same. The only difference comes when a node's __parentNode__ is not an element. If so, __parentElement__ is null.
+
+```javascript
+document.body.parentNode; // the <html> element
+document.body.parentElement; // the <html> element
+
+document.documentElement.parentNode; // the document node
+document.documentElement.parentElement; // null
+```
+
+>Since the <html> element(document.documentElement) doesn't have a parent that is an element, parentElement is null.
