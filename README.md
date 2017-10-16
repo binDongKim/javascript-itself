@@ -29,6 +29,7 @@
 >* [parentNode vs parentElement](#parentnode-vs-parentelement)
 >* [About DOM](#about-dom)
 >* [innerText vs textContent](#innertext-vs-textcontent)
+>* [The problem of document.write()](#the-problem-of-documentwrite)
 
 ***
 
@@ -277,3 +278,9 @@ document.documentElement.parentElement; // null
 ```
 
 >__innerText__: "lions, tigers", __textContent__: "lions, tigers and bears"
+
+***
+
+## The problem of document.write()
+
+>document.write() can be called during the page load, while the browser is parsing the page. Once the page has parsed/loaded, calling this function will also call document.open(), which wipes the page and starts from scratch.
