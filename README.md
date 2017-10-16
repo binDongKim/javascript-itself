@@ -27,6 +27,8 @@
 >* [HTML tags vs HTML elements](#html-tags-vs-html-elements)
 >* [HTML Node object vs HTML Element object](#html-node-object-vs-html-element-object)
 >* [parentNode vs parentElement](#parentnode-vs-parentelement)
+>* [About DOM](#about-dom)
+>* [innerText vs textContent](#innertext-vs-textcontent)
 
 ***
 
@@ -254,3 +256,24 @@ document.documentElement.parentElement; // null
 ```
 
 >Since the <html> element(document.documentElement) doesn't have a parent that is an element, parentElement is null.
+
+***
+
+## About DOM
+
+>__DOM__(Document Object Model) represents the document as nodes and objects. That way, programming languages can connect to the page.
+
+***
+
+## innerText vs textContent
+
+>__textContent__ is the raw textual content inside of the node. __innerText__ is the text which would be presented to the user.
+
+```html
+<div id="t">
+  <div>lions,tigers</div>
+  <div style="visibility:hidden">and bears</div>
+</div>
+```
+
+>__innerText__: "lions, tigers", __textContent__: "lions, tigers and bears"
