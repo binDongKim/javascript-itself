@@ -201,8 +201,7 @@ drawES2015Chart({
 
 ## DOMContentLoaded vs load
 
->DOMContentLoaded awaits only for HTML and scripts to be loaded.
-the load event is fired when the page is fully loaded with all dependent resources including images and styles.
+>__DOMContentLoaded__ awaits only for HTML and scripts to be loaded, which means it's fired when the elements in the document are ready to be accessed by the script. The __load__ event is fired when the page is fully loaded with all dependent resources including images and styles.
 
 ***
 
