@@ -32,6 +32,7 @@
 >* [The problem of document.write()](#the-problem-of-documentwrite)
 >* [About Window.getComputedStyle() and element's style property](#about-windowgetcomputedstyle-and-elements-style-property)
 >* [beforeunload event](#beforeunload-event)
+>* [keypress vs keydown](#keypress-vs-keydown)
 
 ***
 
@@ -297,3 +298,9 @@ document.documentElement.parentElement; // null
 ## beforeunload event
 
 >The __beforeunload__ event is fired when the user is about to leave the page. Only if a string is assigned to the returnValue of the __event__ object, a dialog appears asking the user for confirmation. Since Chrome 51.0, the custom text support is removed.
+
+***
+
+## keypress vs keydown
+
+>__keypress__ event is fired only when a key that produces a character value is pressed down. __keydown__ event is fired when a key is pressed down no matter whether it produces a character value or not.
