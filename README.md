@@ -290,4 +290,4 @@ document.documentElement.parentElement; // null
 
 ## About Window.getComputedStyle() and element's style property
 
->The returned object of getComputedStyle is the same type as the object returned from the element's style property; however, the two objects have different purposes. The object returned from getComputedStyle is read-only and can be used to inspect the element's style. The element.style object should be used to set styles on a specific element.
+>The returned object of getComputedStyle is the same type as the object returned from the element's style property; however, the two objects have different purposes. The object returned from getComputedStyle is read-only and can be used to inspect the element's style. The element.style object should be used to set styles on a specific element. Plus, as you may assume, getComputedStyle returns the absolute/computed values while element's style property returns the relative values such as percentage.
