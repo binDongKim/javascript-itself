@@ -30,6 +30,7 @@
 >* [About DOM](#about-dom)
 >* [innerText vs textContent](#innertext-vs-textcontent)
 >* [The problem of document.write()](#the-problem-of-documentwrite)
+>* [About Window.getComputedStyle() and element's style property](#about-windowgetcomputedstyle-and-elements-style-property)
 
 ***
 
@@ -284,3 +285,9 @@ document.documentElement.parentElement; // null
 ## The problem of document.write()
 
 >document.write() can be called during the page load, while the browser is parsing the page. Once the page has parsed/loaded, calling this function will also call document.open(), which wipes the page and starts from scratch.
+
+***
+
+## About Window.getComputedStyle() and element's style property
+
+>The returned object of getComputedStyle is the same type as the object returned from the element's style property; however, the two objects have different purposes. The object returned from getComputedStyle is read-only and can be used to inspect the element's style. The element.style object should be used to set styles on a specific element.
