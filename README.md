@@ -35,6 +35,8 @@
 >* [keypress vs keydown](#keypress-vs-keydown)
 >* [event.target and this](#eventtarget-and-this)
 >* [Event Propagation:Bubbling vs Capturing](#event-propagationbubbling-vs-capturing)
+>* [DocumentFragment](#documentfragment)
+
 ***
 
 ### TypedArray, ArrayBuffer and View
@@ -330,3 +332,9 @@ Note the differences from *this*(=event.currentTarget)
 ## Event Propagation:Bubbling vs Capturing
 
 >With __bubbling__, the event is first captured and handled by the innermost element and then propagated to outer elements. With __capturing__, the event is first captured by the outermost element and propagated to the inner elements. We can use __addEventListener(type, listener, useCapture)__ to register event handlers for in either bubbling(default) or capturing mode. To use the capturing, pass the third argument as *true*.
+
+***
+
+## DocumentFragment
+
+>__DocumentFragments__ are DOM Nodes but never part of the main DOM tree. Since they only exist in memory, not part of the main DOM tree, appending children to it does not cause page reflow. The usual use case is to create the document fragment, append elements to the document fragment and then append the document fragment to the DOM tree. In the DOM tree, the document fragment is replaced by all its children.
