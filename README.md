@@ -323,7 +323,7 @@ Note the differences from *this*(=event.currentTarget)
 - event.target is the "target" element that initiated the event. It doesn't change through the bubbling process.
 - *this*(event.currentTarget) is the "current" element which the handler is actually handling at that moment.  
 
-Sidenote: *this* doesn't indicate the the current target in the arrow function syntax.
+>Sidenote: *this* doesn't indicate the the current target in the arrow function syntax.
 
 ***
 
