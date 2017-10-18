@@ -33,7 +33,7 @@
 >* [About Window.getComputedStyle() and element's style property](#about-windowgetcomputedstyle-and-elements-style-property)
 >* [beforeunload event](#beforeunload-event)
 >* [keypress vs keydown](#keypress-vs-keydown)
-
+>* [event.target and this](#eventtarget-and-this)
 ***
 
 ### TypedArray, ArrayBuffer and View
@@ -304,3 +304,14 @@ document.documentElement.parentElement; // null
 ## keypress vs keydown
 
 >__keypress__ event is fired only when a key that produces a character value is pressed down. __keydown__ event is fired when a key is pressed down no matter whether it produces a character value or not.
+
+***
+
+## event.target and this
+
+>A handler on a parent element always get the details about where the event actually comes from. The most deeply nested element that caused the event is referred as a __target__ element, accessible as __event.target__.  
+Note the differences from *this*(=event.currentTarget)
+- event.target is the "target" element that initiated the event. It doesn't change through the bubbling process.
+- *this*(event.currentTarget) is the "current" element which the handler is actually handling at that moment.  
+
+Sidenote: *this* doesn't indicate the the current target in the arrow function syntax.
