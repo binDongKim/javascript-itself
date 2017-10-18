@@ -48,7 +48,15 @@
 ### for...in vs for...of
 
 >__for...in__ only iterates __enumerable__ properties including prototype chain.  
->__for...of__ only works with iterable objects such as Array, String.
+>__for...of__ only works with iterable objects such as Array, String.  
+__for...of__ will loop over DOM collections like NodeList objects correctly:
+
+```javascript
+var list = document.querySelectorAll( 'input[type=checkbox]' );
+for (var item of list) {
+  item.checked = true;
+}
+```
 
 ***
 
