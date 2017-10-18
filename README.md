@@ -34,6 +34,7 @@
 >* [beforeunload event](#beforeunload-event)
 >* [keypress vs keydown](#keypress-vs-keydown)
 >* [event.target and this](#eventtarget-and-this)
+>* [Event Propagation:Bubbling vs Capturing](#event-propagationbubbling-vs-capturing)
 ***
 
 ### TypedArray, ArrayBuffer and View
@@ -323,3 +324,9 @@ Note the differences from *this*(=event.currentTarget)
 - *this*(event.currentTarget) is the "current" element which the handler is actually handling at that moment.  
 
 Sidenote: *this* doesn't indicate the the current target in the arrow function syntax.
+
+***
+
+## Event Propagation:Bubbling vs Capturing
+
+>With __bubbling__, the event is first captured and handled by the innermost element and then propagated to outer elements. With __capturing__, the event is first captured by the outermost element and propagated to the inner elements. We can use __addEventListener(type, listener, useCapture)__ to register event handlers for in either bubbling(default) or capturing mode. To use the capturing, pass the third argument as *true*.
