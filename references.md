@@ -32,3 +32,4 @@
 * [Javascript Bookmarklet](https://www.youtube.com/watch?time_continue=33&v=nr0JtExwoV8)
 * [function*: Generator function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*)
 * [CSS Box Model](https://css-tricks.com/the-css-box-model/)
+* [When not to use arrow functions](https://dmitripavlutin.com/when-not-to-use-arrow-functions-in-javascript/)
