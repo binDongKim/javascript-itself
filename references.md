@@ -34,3 +34,4 @@
 * [CSS Box Model](https://css-tricks.com/the-css-box-model/)
 * [When not to use arrow functions](https://dmitripavlutin.com/when-not-to-use-arrow-functions-in-javascript/)
 * [Event Propagation in Javascript](https://www.sitepoint.com/event-bubbling-javascript/)
+* [MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
