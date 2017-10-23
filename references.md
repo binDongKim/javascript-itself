@@ -36,3 +36,4 @@
 * [Event Propagation in Javascript](https://www.sitepoint.com/event-bubbling-javascript/)
 * [MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
 * [JSONP](https://stackoverflow.com/questions/2067472/what-is-jsonp-all-about)
+* [CORS](https://www.html5rocks.com/en/tutorials/cors/)
