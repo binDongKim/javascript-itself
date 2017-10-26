@@ -37,3 +37,4 @@
 * [MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
 * [JSONP](https://stackoverflow.com/questions/2067472/what-is-jsonp-all-about)
 * [CORS](https://www.html5rocks.com/en/tutorials/cors/)
+* [Reflows and Repaint](https://sites.google.com/site/getsnippet/javascript/dom/repaints-and-reflows-manipulating-the-dom-responsibly)
