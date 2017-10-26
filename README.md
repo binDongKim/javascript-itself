@@ -36,6 +36,8 @@
 >* [event.target and this](#eventtarget-and-this)
 >* [Event Propagation:Bubbling vs Capturing](#event-propagationbubbling-vs-capturing)
 >* [DocumentFragment](#documentfragment)
+>* [jQuery .val(value): when the type of value is array](#jquery-valvalue-when-the-type-of-value-is-array)
+>* [offsetWidth vs clientWidth](#offsetwidth-vs-clientwidth)
 
 ***
 
@@ -338,3 +340,15 @@ Note the differences from *this*(=event.currentTarget)
 ## DocumentFragment
 
 >__DocumentFragments__ are DOM Nodes but never part of the main DOM tree. Since they only exist in memory, not part of the main DOM tree, appending children to it does not cause page reflow. The usual use case is to create the document fragment, append elements to the document fragment and then append the document fragment to the DOM tree. In the DOM tree, the document fragment is replaced by all its children.
+
+***
+
+## jQuery .val(value): when the type of value is array
+
+>__val()__ allows you to pass an array of element values. This is useful when working on a jQuery object containing elements like &lt;input type="checkbox"&gt;, &lt;input type="radio"&gt;, and &lt;option&gt;s inside of a &lt;select&gt;. In this case, the inputs and the options having a value that maches one of the elements of the array will be checked or selected while those having a value that doesn't match one of the elements of the array will be unchecked or unselected, depending on the type. Setting values using this method(or using the native value property) doesn't cause the dispatch of the change event. If you want to execute them, you should call .trigger("change") after setting the value.
+
+***
+
+## offsetWidth vs clientWidth
+
+>__offsetWidth__ is a read-only property which returns the layout width of an element. It includes the element borders, horizontal padding and the element css width. __clientWidth__ is zero for elements with no CSS or inline layout boxes, otherwise it's the inner width of an element in pixels. It includes padding but not border.
