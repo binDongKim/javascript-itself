@@ -38,7 +38,7 @@
 >* [DocumentFragment](#documentfragment)
 >* [jQuery .val(value): when the type of value is array](#jquery-valvalue-when-the-type-of-value-is-array)
 >* [offsetWidth vs clientWidth](#offsetwidth-vs-clientwidth)
-
+>* [Function.length vs arguments.length](#functionlength-vs-argumentslength)
 ***
 
 ### TypedArray, ArrayBuffer and View
@@ -352,3 +352,9 @@ Note the differences from *this*(=event.currentTarget)
 ## offsetWidth vs clientWidth
 
 >__offsetWidth__ is a read-only property which returns the layout width of an element. It includes the element borders, horizontal padding and the element css width. __clientWidth__ is zero for elements with no CSS or inline layout boxes, otherwise it's the inner width of an element in pixels. It includes padding but not border.
+
+***
+
+## Function.length vs arguments.length
+
+>__Function.length__ indicates how many arguments the function expects. By contrast, __arguments.length__ provides the number of the arguments actually passed to the function.
