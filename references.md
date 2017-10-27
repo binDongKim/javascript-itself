@@ -39,3 +39,4 @@
 * [CORS](https://www.html5rocks.com/en/tutorials/cors/)
 * [Reflows and Repaint](https://sites.google.com/site/getsnippet/javascript/dom/repaints-and-reflows-manipulating-the-dom-responsibly)
 * [What forces layout/reflow](https://gist.github.com/paulirish/5d52fb081b3570c81e3a)
+* [Offline Storage for Progressive Web Apps](https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/offline-for-pwa?hl=en)
