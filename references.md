@@ -41,3 +41,4 @@
 * [What forces layout/reflow](https://gist.github.com/paulirish/5d52fb081b3570c81e3a)
 * [Offline Storage for Progressive Web Apps](https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/offline-for-pwa?hl=en)
 * [Pure JS drag and drop functionality](https://codepen.io/byronglover/pen/oxjgEK?editors=1010)
+* [Importance of Test Code](https://sculove.github.io/slides/testing/#/73)
