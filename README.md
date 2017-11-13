@@ -74,7 +74,8 @@ for (var item of list) {
 
 ## Temporal Dead Zone with let, const
 
->In ECMAScript 2015, __let__ bindings are not subject to __Variable Hoisting__, which means that __let__ declarations do not move to the top of the current execution context. Referencing the variable in the block before the initialization results in a __ReferenceError__ (contrary to a variable declared with var, which will just have the undefined value). The variable is in a __"temporal dead zone"__ from the start of the block until the initialization is processed.
+>In ECMAScript 2015, __let__ bindings are not subject to __Variable Hoisting__, which means that __let__ declarations do not move to the top of the current execution context. Referencing the variable in the block before the initialization results in a __ReferenceError__ (contrary to a variable declared with var, which will just have the undefined value). The variable is in a __"temporal dead zone"__ from the start of the block until the initialization is processed.   
+More info: http://exploringjs.com/es6/ch_variables.html#sec_temporal-dead-zone
 
 ***
 
